@@ -177,7 +177,9 @@ h1 {
   background-color: #1d1a16;
   color: #ffab04;
 }
-
+.center {
+  text-align: center;
+}
 .control {
   margin: 0.5rem 0;
   display: flex;
@@ -219,6 +221,16 @@ h1 {
   background-color: #ffab04;
   border-color: #ffab04;
   color: #1f1a09;
+}
+
+.error {
+  width: 90%;
+  max-width: 25rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffab04;
+  color: #010000;
+  border-radius: 6px;
 }
 
 .text-button {

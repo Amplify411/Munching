@@ -35,13 +35,13 @@ app.post('/orders', async (req, res) => {
     orderData.customer.email === null ||
     !orderData.customer.email.includes('@') ||
     orderData.customer.name === null ||
-    orderData.customer.name.trim() === '' ||
+    orderData.customer.name === '' ||
     orderData.customer.street === null ||
-    orderData.customer.street.trim() === '' ||
+    orderData.customer.street === '' ||
     orderData.customer['postal-code'] === null ||
-    orderData.customer['postal-code'].trim() === '' ||
+    orderData.customer['postal-code'] === '' ||
     orderData.customer.city === null ||
-    orderData.customer.city.trim() === ''
+    orderData.customer.city === ''
   ) {
     return res.status(400).json({
       message:
